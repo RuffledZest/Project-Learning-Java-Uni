@@ -21,7 +21,7 @@ public class Project1 {
         //         String empName = employee[1];
         //         String department = employee[4];
         //         String desigCode = employee[3];
-        
+
         String empId = args[0];
         boolean found = false;
         for (String[] employee : employees) {
@@ -64,10 +64,8 @@ public class Project1 {
                         break;
                 }
 
-                // Calculate net salary
                 int netSalary = basic + hra + da - it;
 
-                // Print employee details
                 System.out.println("Emp No   Emp-Name   Department   Designation   Salary");
                 System.out.println(empId + "   " + empName + "   " + department + "   " + designation + "   " + netSalary);
                 break;
